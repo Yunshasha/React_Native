@@ -11,13 +11,13 @@ function PizzaTranslator() {
         onChangeText={(e) => setText(e)}
         value={text}
       />
-      <Text style={{ color: "blue", padding: 20 }}>
+      <Text style={{ color: "blue", padding: 1 }}>
         {text
           .split(" ")
           .map((word) => word && "haha")
           .join(" ")}
       </Text>
-      <ActivityIndicator size="large" color="#0000ff" />
+      {/* <ActivityIndicator size="small" color="#0000ff" /> */}
     </View>
   );
 }
